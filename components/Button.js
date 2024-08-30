@@ -13,7 +13,7 @@ export default function Button({ label, theme, onPress }) {
           style={[styles.button, { backgroundColor: "#fff" }]}
           onPress={onPress}>
           <FontAwesome
-            name=""
+            name="photo"
             size={18}
             color="#25292e"
             style={styles.buttonIcon}
@@ -28,7 +28,7 @@ export default function Button({ label, theme, onPress }) {
 
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.buttonContainer} onPress={() => onPress}>
+      <Pressable style={styles.buttonContainer} onPress={() => onPress()}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
